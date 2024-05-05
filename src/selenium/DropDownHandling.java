@@ -25,6 +25,8 @@ public class DropDownHandling {
 		Thread.sleep(2000);
 		select.selectByValue("level8");
 		Thread.sleep(2000);
+		
+	
 
 		driver.quit();
 

@@ -21,4 +21,4 @@ public class AddItemToCart {
 		driver.quit();
 
 	}
-}//*[@id="inventory_container"]/div
+}
