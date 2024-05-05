@@ -16,6 +16,8 @@ public class OpenGoogle {
 		driver.get("https://www.google.com");
 
 		driver.findElement(By.name("q")).sendKeys("Apple" + Keys.ENTER);
+		
+		driver.quit();
 
 	}
 
