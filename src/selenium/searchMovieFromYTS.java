@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class searchMovieFromYTS {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		ChromeDriver driver = new ChromeDriver();
 
@@ -14,9 +14,14 @@ public class searchMovieFromYTS {
 
 		driver.manage().window().maximize();
 
-		driver.findElement(By.id("quick-search-input")).sendKeys("The Godfather" + Keys.ENTER);
+		driver.findElement(By.id("quick-search-input")).sendKeys("The Godfather");
+		Thread.sleep(2000);
 
-		driver.navigate().to("https://yts.mx/movies/the-godfather-1972");
+		driver.findElement(By.id("quick-search-input")).sendKeys(Keys.ARROW_DOWN);
+		Thread.sleep(2000);
+
+		driver.findElement(By.id("quick-search-input")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
 
 		driver.quit();
 

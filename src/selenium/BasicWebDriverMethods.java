@@ -19,7 +19,7 @@ public class BasicWebDriverMethods {
 		System.out.println(Title);
 
 		String pageSource = driver.getPageSource();
-		System.out.println(pageSource);
+		//System.out.println(pageSource);
 
 		driver.navigate().to("https://www.1337x.to/");
 
